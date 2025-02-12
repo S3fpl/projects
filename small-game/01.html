@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funny Game</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="score">
+        <p>Wins: <span id="wins">0</span></p>
+        <p>Losses: <span id="losses">0</span></p>
+        <p>Ties: <span id="ties">0</span></p>
+    </div>
+    <div class="result">
+        <p id="resultText">Make your move!</p>
+        <p>Computer chose: <span id="computerChoice"></span></p>
+    </div>
+    <div class="all">
+        <div class="shapes">
+            <div class="button-container">
+                <button onclick="playGame('rock')" class="brutalist-button openai button-1">
+                    <div class="logo">
+                        👊
+                    </div>
+                    <div class="button-text">
+                        <span>ROCK</span>
+                    </div>
+                </button>
+            </div>
+            <div class="button-container">
+                <button onclick="playGame('paper')" class="brutalist-button openai button-1">
+                    <div class="logo">
+                        ✋
+                    </div>
+                    <div class="button-text">
+                        <span>PAPER</span>
+                    </div>
+                </button>
+            </div>
+            <div class="button-container">
+                <button onclick="playGame('scissors')" class="brutalist-button openai button-1">
+                    <div class="logo">
+                        ✌
+                    </div>
+                    <div class="button-text">
+                        <span>SCISSORS</span>
+                    </div>
+                </button>
+            </div>
+            <div class="button-container">
+                <button onclick="playGame('shoot')" class="brutalist-button openai button-1">
+                    <div class="logo">
+                        🔫
+                    </div>
+                    <div class="button-text">
+                        <span>SHOOT</span>
+                    </div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

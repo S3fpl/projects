@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Handjet", sans-serif;
+    font-optical-sizing: auto;
+}
+
+html {
+    background: black;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#canvas2 {
+    filter: blur(1px);
+}
+
+.words{
+    position: relative;
+    color: #ff0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 75px;
+    font-weight: 900;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 4px 4px 30px rgba(255, 0, 0, 0.9);
+}

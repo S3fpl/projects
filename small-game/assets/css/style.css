@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: url(/assets/imgs/5.jpg);
+    background-color: #222831;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.score {
+    width: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    font-size: 24px;
+    font-weight: 800;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(78, 78, 78, 0.144) 0px 5px 15px;
+}
+
+.result {
+    width: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15%;
+    font-size: 24px;
+    font-weight: 800;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(78, 78, 78, 0.144) 0px 5px 15px;
+}
+
+@media screen and (max-width: 880px) {
+    .score,
+    .result {
+        font-size: 17px;
+        padding: 6px;
+    }
+}
+
+@media screen and (max-width: 748px) {
+    .score,
+    .result {
+        font-size: 15px;
+        padding: 5px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .score,
+    .result {
+        font-size: 12px;
+        padding: 4px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .score,
+    .result {
+        font-size: 10px;
+        padding: 3px;
+        width: 90%;
+    }
+}
+
+.shapes {
+    position: absolute;
+    top: 230px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.brutalist-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px; 
+    color: #e5dede;
+    font-weight: bold;
+    text-decoration: none;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.button-1 {
+    background-color: #063525;
+    border: 3px solid #42c498;
+    border-radius: 12px;
+    box-shadow: 4px 4px 1px #000000;
+}
+
+.button-1:hover {
+    background-color: #1a5c46;
+    border-color: #030504;
+    transform: translate(-6px, -6px) rotate(1deg);
+    box-shadow: 10px 10px 0 #000000, 15px 15px 20px rgba(64, 164, 122, 0.2);
+}
+
+.button-1::before,
+.button-1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: 0.6s;
+}
+
+.button-1::before {
+    left: -100%;
+}
+
+.button-1::after {
+    left: 100%;
+}
+
+.button-1:hover::before {
+    animation: swipeRight 1.5s infinite;
+}
+
+.button-1:hover::after {
+    animation: swipeLeft 1.5s infinite;
+}
+
+@keyframes swipeRight {
+    100% {
+        transform: translateX(200%) skew(-45deg);
+    }
+}
+
+@keyframes swipeLeft {
+    100% {
+        transform: translateX(-200%) skew(-45deg);
+    }
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 3;
+}
+
+.button-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.2;
+    text-align: center;
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    z-index: 3;
+}
+
+.button-text span:first-child {
+    font-size: 10px; 
+    font-weight: normal;
+}
+
+.button-text span:last-child {
+    font-size: 14px; 
+}
+
+.brutalist-button:hover .openai-logo {
+    transform: translateY(-10px);
+}
+
+.brutalist-button:hover .openai-icon {
+    width: 30px; 
+    height: 30px
+
+}
+
+.brutalist-button:hover .button-text,
+.brutalist-button:hover .openai-text {
+    opacity: 1;
+    max-height: 60px;
+    margin-top: 8px;
+}
+
+@keyframes spin-and-zoom {
+    0% {
+        transform: rotate(0deg) scale(1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+.brutalist-button:active .openai-icon,
+.brutalist-button:active .openai-text,
+.brutalist-button:active .button-text {
+    transform: scale(0.95);
+}
