@@ -24,7 +24,7 @@ I keep everything well-organized for easy navigation:
 
 ```
 projects/
-│── project-1/
+│──courses-site/
 │   ├── src/           # Source code
 │   ├── components/    # Reusable UI components
 │   ├── assets/        # Images, icons, and fonts
