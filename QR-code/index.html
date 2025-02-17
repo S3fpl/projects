@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator & Scanner</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs/qrcode.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jsQR/1.4.0/jsQR.min.js"></script>
+</head>
+
+<body class="dark-mode">
+    <!-- Error Alert -->
+    <div id="error-alert" class="error-alert">
+        <div class="error-alert-content">
+            <div class="error-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="error-svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 3.75h.008v.008H12v-.008Z"></path>
+                </svg>
+            </div>
+            <div class="error-message">
+                <p class="error-title">Please try again</p>
+                <p class="error-description">This is the description part</p>
+            </div>
+            <button class="close-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="close-svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <button class="toggle-btn" onclick="toggleMode()">
+        <img id="toggle-icon" src="/assets/svg/sun.svg" alt="Mode Icon" width="30" height="30">
+    </button>
+
+    <div class="container">
+        <div>
+            <h2>QR Code Generator</h2>
+            <input type="text" id="text" placeholder="Enter text">
+            <button onclick="generateQR()">Generate QR</button>
+            <div class="space"></div>
+            <div id="qrcode"></div>
+        </div>
+
+        <div>
+            <h2>QR Code Scanner</h2>
+            <input type="file" id="qr-input" accept="image/*">
+            <canvas id="qr-canvas" style="display:none;"></canvas>
+            <p id="qr-result"></p>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
