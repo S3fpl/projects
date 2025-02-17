@@ -9,12 +9,13 @@ Welcome to my **Projects Repository**! 🎨💻 This is where I showcase my fron
 This repository contains various front-end projects built using modern web technologies. From responsive designs to interactive UI components, each project reflects my skills and passion for front-end development.
 
 ### 🎯 **What You’ll Find Here:**
-✅ **Modern UI/UX designs** – Pixel-perfect, responsive, and optimized.
-✅ **Reusable Components** – Modular and scalable components built with React.js.
-✅ **Dark Mode Support** – Because who doesn’t love dark themes? 😎
-✅ **Animations & Transitions** – Smooth, visually appealing effects.
-✅ **Performance Optimization** – Efficient rendering, lazy loading, and best practices.
-✅ **CSS Frameworks** – Tailwind CSS & Bootstrap for styling.
+- ✅ **Modern UI/UX designs** – Pixel-perfect, responsive, and optimized.  
+- ✅ **Reusable Components** – Modular and scalable components built with React.js.  
+- ✅ **Dark Mode Support** – Because who doesn’t love dark themes? 😎  
+- ✅ **Animations & Transitions** – Smooth, visually appealing effects.  
+- ✅ **Performance Optimization** – Efficient rendering, lazy loading, and best practices.  
+- ✅ **CSS Frameworks** – Tailwind CSS & Bootstrap for styling.  
+- ✅ **Back-End Support** – Built with **PHP** for server-side scripting and **MySQL** for relational database management.
 
 ---
 
