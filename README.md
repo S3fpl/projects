@@ -82,7 +82,7 @@ A beautifully designed landing page with animations and interactive elements.
 - Optimized for performance and responsiveness
 
 📂 **Path**: `/landing-page/`
-🔗 **Live Demo**: [Click Here](#)
+🔗 **Live Demo**: [Click Here](#https://github.com/S3fpl/projects.git)
 
 ---
 
@@ -125,9 +125,8 @@ If you’d like to contribute:
 ## 📬 Contact Me
 
 Want to collaborate? Reach out via:
-- **GitHub Issues**: [Open an Issue](#)
-- **Email**: your-email@example.com
-- **Twitter**: [@yourhandle](#)
+- **GitHub Issues**: [Open an Issue](#https://github.com/S3fpl/projects.git)
+- **Email**: seif.tanjiro@gmail.com
 
 ---
 
