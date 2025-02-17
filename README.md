@@ -52,6 +52,12 @@ I focus on building **scalable, maintainable, and high-performance** front-end a
 - **Tailwind CSS & Bootstrap** – For fast and beautiful styling.
 - **JavaScript (ES6+)** – Adding interactivity and logic.
 - **React.js** – For building reusable and dynamic UI components.
+- **Next.js** – For server-side rendering and static site generation with React.
+
+### 🔹 **Front-End Stack**
+- **PHP** – Server-side scripting for dynamic web pages.
+- **MySQL** – For relational database management.
+- **Node.js** – JavaScript runtime for building scalable server-side applications.
 
 ### 🔹 **Development Workflow**
 - **Git & GitHub** – Version control and collaboration.
