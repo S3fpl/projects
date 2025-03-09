@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - البوابة العقارية</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1><a href="index.html"><span>العقارية</span>البوابة</a></h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="properties.html">العقارات</a></li>
+                    <li><a href="agents.html">الوكلاء</a></li>
+                    <li><a href="about.html">من نحن</a></li>
+                    <li><a href="contact.html" class="active">اتصل بنا</a></li>
+                </ul>
+            </nav>
+            <div class="auth-buttons">
+                <button class="btn btn-outline">تسجيل الدخول</button>
+                <button class="btn btn-primary">إنشاء حساب</button>
+            </div>
+            <div class="theme-toggle">
+                <button id="theme-toggle-btn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>اتصل بنا</h1>
+            <p>نحن هنا للإجابة على استفساراتك ومساعدتك</p>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h2>معلومات الاتصال</h2>
+                    <p>يمكنك التواصل معنا من خلال أي من الطرق التالية أو ملء نموذج الاتصال.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>العنوان</h3>
+                                <p>123 شارع العقارات، حي الملقا، الرياض، المملكة العربية السعودية</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>الهاتف</h3>
+                                <p>+966 123 456 7890</p>
+                                <p>+966 123 456 7891</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>البريد الإلكتروني</h3>
+                                <p>info@realestate.com</p>
+                                <p>support@realestate.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>ساعات العمل</h3>
+                                <p>الأحد - الخميس: 9:00 صباحًا - 5:00 مساءً</p>
+                                <p>الجمعة - السبت: مغلق</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>تابعنا على</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h2>أرسل لنا رسالة</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">الاسم الكامل</label>
+                            <input type="text" id="name" name="name" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" placeholder="أدخل بريدك الإلكتروني" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" placeholder="أدخل رقم هاتفك">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">الموضوع</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>اختر الموضوع</option>
+                                <option value="inquiry">استفسار عام</option>
+                                <option value="property">استفسار عن عقار</option>
+                                <option value="agent">التواصل مع وكيل</option>
+                                <option value="feedback">تقديم ملاحظات</option>
+                                <option value="other">أخرى</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">الرسالة</label>
+                            <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك هنا..." required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">إرسال الرسالة</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="map-section">
+        <div class="container">
+            <h2>موقعنا</h2>
+            <div class="map-container">
+                <!-- في تطبيق حقيقي، سيتم استبدال هذا بخريطة Google Maps أو خريطة تفاعلية أخرى -->
+                <div class="map-placeholder">
+                    <img src="https://maps.googleapis.com/maps/api/staticmap?center=Riyadh,SaudiArabia&zoom=13&size=1200x400&maptype=roadmap&markers=color:red%7CRiyadh,SaudiArabia&key=YOUR_API_KEY" alt="خريطة الموقع">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2>الأسئلة الشائعة</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>كيف يمكنني إدراج عقاري على المنصة؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمكنك إدراج عقارك بسهولة من خلال إنشاء حساب على منصتنا، ثم النقر على "أدرج عقارك" وملء النموذج بالمعلومات المطلوبة والصور.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>ما هي رسوم الإدراج على المنصة؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>الإدراج الأساسي مجاني لمدة 30 يومًا. نقدم أيضًا باقات مميزة تبدأ من 99 ريال شهريًا للحصول على ميزات إضافية مثل الظهور في القائمة المميزة.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>كيف يمكنني التواصل مع وكيل عقاري؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>يمكنك التواصل مع الوكلاء العقاريين من خلال صفحة تفاصيل العقار أو من خلال صفحة الوكلاء. ستجد معلومات الاتصال الخاصة بكل وكيل مثل رقم الهاتف والبريد الإلكتروني.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>هل يمكنني حجز موعد لمعاينة العقار عبر الموقع؟</h3>
+                        <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>نعم، يمكنك حجز موعد لمعاينة العقار من خلال النقر على زر "حجز معاينة" في صفحة تفاصيل العقار واختيار الوقت المناسب لك.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <div class="logo">
+                        <h2><span>العقارية</span>البوابة</h2>
+                    </div>
+                    <p>شريكك الموثوق في العثور على العقار المثالي. نربط المشترين والبائعين والمستأجرين لجعل معاملات العقارات بسيطة.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>روابط سريعة</h3>
+                    <ul>
+                        <li><a href="index.html">الرئيسية</a></li>
+                        <li><a href="properties.html">العقارات</a></li>
+                        <li><a href="agents.html">الوكلاء</a></li>
+                        <li><a href="about.html">من نحن</a></li>
+                        <li><a href="contact.html">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>أنواع العقارات</h3>
+                    <ul>
+                        <li><a href="#">شقق</a></li>
+                        <li><a href="#">منازل</a></li>
+                        <li><a href="#">فلل</a></li>
+                        <li><a href="#">تجاري</a></li>
+                        <li><a href="#">أراضي</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>اتصل بنا</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-map-marker-alt"></i> 123 شارع العقارات، المدينة</li>
+                        <li><i class="fas fa-phone"></i> +966 123 456 7890</li>
+                        <li><i class="fas fa-envelope"></i> info@realestate.com</li>
+                    </ul>
+                    <div class="newsletter">
+                        <h4>اشترك في النشرة الإخبارية</h4>
+                        <div class="newsletter-form">
+                            <input type="email" placeholder="بريدك الإلكتروني">
+                            <button><i class="fas fa-paper-plane"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 البوابة العقارية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="contact.js"></script>
+</body>
+</html>
+
