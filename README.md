@@ -35,8 +35,6 @@ projects/
 │   ├── package.json   # Dependencies
 │   └── index.html     # Main entry point
 │
-│── project-2/
-│   ├── ...
 │
 └── README.md         # Main repository readme
 ```
